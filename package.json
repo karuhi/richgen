@@ -1,0 +1,30 @@
+{
+  "name": "richgen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "next": "cd src-next && next",
+    "next-build": "next build src-next",
+    "next-export": "next export src-next dist",
+    "render-dist": "npm run next-build && npm run next-export",
+    "tauri": "tauri",
+    "tauri-dev": "npm run tauri dev",
+    "bundle": "tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.2",
+    "next": "^12.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.5",
+    "@types/node": "^18.6.1",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.25",
+    "typescript": "^4.7.4"
+  }
+}
